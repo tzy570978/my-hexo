@@ -8,7 +8,7 @@ categories: 前端
 ## 父组件向子组件传值
 props:父组件以属性的方式传值给子组件;子组件通过props方式接收数据
 在父组件中引入子组件并绑定fatherData自定义属性
-```
+```bash
 <Son :fatherData="fatherData"></Son>
 
 <script>
@@ -25,7 +25,7 @@ import Son from '@/components/son'
 </script>
 ```
 在子组件中使用 props 接收父组件传递的数据，props 里的名字跟父组件定义的属性名一致
-```vue
+```bash
 <template>
   <div>我是父组件的数据：{{fatherData}}</div>
   <div>我是父组件传递修改后的数据：{{mydata}}</div>
